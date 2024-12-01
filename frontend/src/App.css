@@ -1,42 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* App */
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar */
+
+.NavContainer {
+  height: 50px;
+  width: 80vw;
+  border: 2px solid #739CD0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.NavList {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.NavList > li > a{
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.inactive {
+  padding: 8px;
+  background-color: white;
+  box-shadow: 2px 2px lightblue;
+  border-radius: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+
+.ContentContainer {
+  height: 95vh;
+  width: 80vw;
+  border: 2px solid #739CD0;
+  margin-top: 60px;
 }
