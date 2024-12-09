@@ -51,6 +51,9 @@
 .ContentContainer {
   height: 95vh;
   width: 80vw;
-  border: 2px solid #739CD0;
+  border: 2px solid #000000;
   margin-top: 60px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
